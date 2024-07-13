@@ -1,0 +1,1480 @@
+:root {
+    --main-color: #294563;
+    --speaking-color: #c76378;
+    --listening-color: #32b4c8;
+    --writing-color: #f9a95a;
+    --reading-color: #37854d;
+    --primary-gradient: linear-gradient(180deg, #294563 0%, rgb(23, 38, 54) 100%);
+    --reading-gradient: linear-gradient(180deg, #337845 0%, #265a35 100%);
+    --listening-gradient: linear-gradient(180deg, #33b2c7 0%, #268695 100%);
+    --writing-gradient: linear-gradient(180deg, #faa859 0%, #bb7f44 100%);
+    --speaking-gradient: linear-gradient(180deg, #c86478 0%, #954b5a 100%);
+    --font: "Nunito", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
+    --primary-font: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+body {
+    font-family: var(--font);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+    margin-right: 30px;
+    padding: 2px 0px;
+}
+
+.site_logo {
+    width: 190px;
+}
+
+/* Navigation menu */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 50px;
+    font-size: 14px;
+    overflow: hidden;
+    margin: 0px 17px;
+}
+
+.nav ul .nav_item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav .home_icon {
+    height: 32px;
+    margin: 0px 5px;
+}
+
+.nav .home_link {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    transition: 0.1s all ease;
+}
+
+.nav ul .home_link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav ul .nav_item_special {
+    display: flex;
+    align-content: center;
+    height: 50px;
+    background-color: var(--speaking-color);
+}
+
+.nav ul li a span {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+/* Dropdown`s submenu style */
+.ielts_library {
+    left: 134px;
+}
+
+.ielts_tips {
+    left: 317px;
+}
+
+.ielts_prep {
+    left: 442px;
+}
+
+/* Dropdown menu style */
+#dropdown_menu {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: absolute;
+    z-index: 2;
+    flex-direction: column;
+    background-color: rgba(54, 80, 108, 0.9);
+    line-height: 2;
+    font-weight: 800;
+    display: none;
+}
+
+#dropdown_menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #2945639d,#294563bc,#294563);
+    filter: blur(10px);
+    z-index: -1;
+}
+
+#dropdown_menu ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+#dropdown_menu ul li #arrow_right {
+    margin-left: 10px;
+    text-align: end;
+}
+
+#dropdown_menu ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#dropdown_menu ul li:hover {
+    background-color: var(--main-color);
+}
+
+/* Global slider style code */
+#main_swiper {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    margin-top: 50%;
+}
+
+.swiper-container .swiper-pagination .swiper-pagination-bullet {
+    background-color: #fff; 
+  }
+
+/*  ==================== First slide 'HERO' style code ==================== */
+.slider_content_hero_page {
+    display: flex;
+    background-image: url("https://ieltsonlinetests.com/themes/iot/images/hero-background/hero-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-family: var(--font);
+    width: 100%;
+    height: 530px;
+}
+
+/* Slide HERO text content part style code */
+.text_content_part {
+    text-align: left;
+    max-width: 570px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+}
+
+.text_content_part .title {
+    font-family: var(--primary-font);
+    font-size: 46px;
+    color: #e8e8e8;
+    margin: 0 0 21px;
+}
+
+.text_content_part .title h1 {
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.text_content_part .more_info {
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--listening-color);
+    margin: 0 0 27px;
+}
+
+.text_content_part .more_info strong {
+    font-family: "Nunito", "Helvetica Neue", "Roboto", Helvetica, Arial,
+        sans-serif;
+    color: white;
+    font-weight: 800;
+}
+
+.text_content_part .students_part {
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.23px;
+    color: #f3f3f3;
+    margin-bottom: 29px;
+}
+
+.text_content_part .students_part img {
+    max-width: 41px;
+    margin-right: 10px;
+}
+
+.text_content_part .button_part button {
+    animation: buttonFadeUp 2s ease-in-out forwards;
+    min-width: 179px;
+    height: 58px;
+    line-height: 58px;
+    font-weight: bolder;
+    border-radius: 28.5px;
+    background-color: #faaa5a;
+    font-size: 16px;
+    letter-spacing: 0.44px;
+    color: #284664;
+    border: none;
+}
+
+/* Slide 'HERO' animation part style code */
+.animation_part {
+    position: relative;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+/* Hero Animation */
+.hero_animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_animation .hero {
+    position: relative;
+    z-index: 2;
+    width: 66px;
+    margin-left: 10px;
+    -webkit-animation-name: movePerson;
+    animation-name: movePerson;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+/* Arrows animation style code */
+.arrows * {
+    position: absolute;
+    -webkit-animation-name: moveArrowDistance;
+    animation-name: moveArrowDistance;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.hero_animation .arrow_hero_1 {
+    width: 166px;
+    -webkit-animation-name: moveArrow;
+    animation-name: moveArrow;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.arrows .arrow_hero_2 {
+    top: 75%;
+    left: 19%;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.arrows .arrow_hero_3 {
+    top: 80%;
+    left: 65%;
+    -webkit-animation: moveArrowDistance15 20s infinite linear;
+    animation: moveArrowDistance15 20s infinite linear;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.arrows .arrow_hero_4 {
+    top: 40.4%;
+    left: 62.1%;
+    -webkit-animation: moveArrowDistance15 15s infinite linear;
+    animation: moveArrowDistance15 15s infinite linear;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.arrows .arrow_hero_5 {
+    top: 39.5%;
+    left: 23.9%;
+    -webkit-animation: moveArrowDistance15 11s infinite linear;
+    animation: moveArrowDistance15 11s infinite linear;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.arrows .arrow_hero_6 {
+    top: 39.5%;
+    left: 34.9%;
+    -webkit-animation: moveArrowDistance15 5s infinite linear;
+    animation: moveArrowDistance15 5s infinite linear;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.arrows .arrow_hero_7 {
+    top: 42.5%;
+    left: 73.9%;
+    -webkit-animation: moveArrowDistance15 5s infinite linear;
+    animation: moveArrowDistance15 5s infinite linear;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.arrows .arrow_hero_8 {
+    top: 35.5%;
+    left: 55.9%;
+    -webkit-animation: moveArrowDistance15 13s infinite linear;
+    animation: moveArrowDistance15 13s infinite linear;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* Lines Animation style code */
+.animation_part .lines #line_hero {
+    position: absolute;
+    -webkit-animation-name: heroLines;
+    animation-name: heroLines;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+.animation_part .lines .line_hero_1 {
+    top: 46%;
+    left: 18%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.animation_part .lines .line_hero_2 {
+    top: 33.5%;
+    left: 30.2%;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.animation_part .lines .line_hero_3 {
+    top: 31.3%;
+    left: 28.1%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.animation_part .lines .line_hero_4 {
+    top: 19%;
+    left: 32%;
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+.animation_part .lines .line_hero_5 {
+    top: 8%;
+    left: 61%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+.animation_part .lines .line_hero_6 {
+    top: 32.7%;
+    left: 60%;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.animation_part .lines .line_hero_7 {
+    top: 43.1%;
+    left: 72%;
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+.animation_part .lines .line_hero_8 {
+    top: 76.1%;
+    left: 48%;
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+.animation_part .lines .line_hero_9 {
+    top: 47.6%;
+    left: 10.8%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.animation_part .lines .line_hero_10 {
+    top: 44.6%;
+    left: 64.8%;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+.animation_part .lines .line_hero_11 {
+    top: 9.4%;
+    left: 53%;
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+.animation_part .lines .line_hero_12 {
+    top: 72%;
+    left: 41%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.animation_part .lines .line_hero_13 {
+    top: 53%;
+    left: 66%;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+/* ==================== Slide 'CERTIFICATE' style code ====================  */
+.slider_content_certificate .certificate img {
+    height: 430px;
+    margin-top: 35px;
+    animation: buttonFadeUp 1s;
+}
+
+.slider_content_certificate>.content {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.slider_content_certificate .title {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.slider_content_certificate .content_title {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.slider_content_certificate .content_info {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    display: block;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1.2;
+}
+
+.slider_content_certificate .content button {
+    display: block;
+    background: #f9a95a;
+    border-radius: 38px;
+    height: 58px;
+    min-width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #294563;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 3rem;
+    animation: buttonFadeUp 1s;
+}
+
+/* Canvas stars animation for Slide CERTIFICATE style code */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    background-color: var(--main-color);
+}
+
+/* Darkness background for slide CERTIFICATE style code */
+.darkness {
+    background-color: #223952a1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 530px;
+}
+
+/* Texture for stars animation style code */
+.texture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    background-image: url("https://ieltsonlinetests.com/themes/iot/images/hero-background/hero-bg-5.svg");
+    background-size: cover;
+    width: 100%;
+    height: 530px;
+}
+
+/* ==================== Courses page style code ====================  */
+.courses {
+    width: 100%;
+    font-family: var(--primary-font);
+}
+
+.courses .explore_more button {
+    width: 100%;
+    max-width: 211px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #cccccc;
+    color: white;
+    font-weight: bold;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    border: none;
+    margin: 28px auto 31px;
+    display: block;
+    padding: 0 16px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.courses .explore_more button:hover {
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+/* Courses banner style code */
+.courses .banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Courses description style code */
+.courses>.description {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.description span {
+    font-size: 16;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    color: #294563;
+    margin-bottom: 54px;
+    margin: 0 0 10px;
+}
+
+/* Courses title style code */
+.courses>.title {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.title h2 {
+    margin: 65px 0 11px;
+    line-height: 1.35;
+    letter-spacing: 0.3px;
+    color: var(--main-color);
+    position: relative;
+    display: inline-block;
+}
+
+.title h2 span {
+    position: absolute;
+    right: -38px;
+    top: -6px;
+    font-size: 9px;
+    font-weight: 800;
+    width: 40px;
+    height: 15px;
+    line-height: 16px;
+    border-radius: 8px;
+    background-color: #faaa5a;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Courses card style code */
+.courses_card {
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+    justify-content: center;
+}
+
+.courses_card a {
+    text-decoration: none;
+}
+
+.courses_card .darkness {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.titles_for_course_cards {
+    display: flex;
+    width: 100%;
+}
+
+/* Course 'Writing' card style code */
+.writing {
+    display: block;
+    max-width: 360px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid var(--writing-color);
+}
+
+.writing:hover {
+    box-shadow: 1px 1px 10px var(--writing-color);
+}
+
+.title_writing {
+    background-color: var(--writing-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    line-height: 30px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 166px;
+    text-align: left;
+}
+
+.writing .content {
+    position: relative;
+    width: 360px;
+    height: 510px;
+    border-radius: 0px 4px 4px 4px;
+    overflow: hidden;
+}
+
+/* Course 'Reading' card style code */
+.reading {
+    display: block;
+    max-width: 360px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid var(--main-color);
+}
+
+.reading:hover {
+    box-shadow: 1px 1px 10px var(--main-color);
+}
+
+.reading .teacher_photo img {
+    border: 2px solid var(--main-color);
+}
+
+.title_reading {
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    line-height: 30px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 166px;
+    text-align: left;
+}
+
+.reading .content {
+    position: relative;
+    width: 360px;
+    height: 510px;
+    border-radius: 0px 4px 4px 4px;
+    overflow: hidden;
+}
+
+/* Course 'Speaking' card style code */
+.speaking {
+    display: block;
+    max-width: 360px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    border: 2px solid var(--speaking-color);
+}
+
+.speaking:hover {
+    box-shadow: 1px 1px 10px var(--speaking-color);
+}
+
+.speaking .teacher_photo img{
+    border: 2px solid var(--speaking-color);
+}
+
+.title_speaking {
+    background-color: var(--speaking-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    line-height: 30px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 166px;
+    text-align: left;
+}
+
+.speaking .content {
+    position: relative;
+    width: 360px;
+    height: 510px;
+    border-radius: 0px 4px 4px 4px;
+    overflow: hidden;
+}
+
+/* Course cards global style code */
+.course_photo {
+    max-height: 215px;
+    overflow: hidden;
+}
+
+/* Course photo background style code */
+.course_photo_bg {
+    position: absolute;
+    z-index: -1;
+}
+
+.course_photo_bg img {
+    height: 210px;
+    width: 385px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Course photo :hover animation */
+.course_photo:hover .course_photo_bg img {
+    scale: 1.05;
+}
+
+/* Course name style code */
+.course_name {
+    padding: 20px 30px 16px;
+}
+
+.course_name h3 {
+    font-size: 28px;
+    line-height: 1.12;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -moz-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+.course_teacher {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.63;
+    letter-spacing: 0.5px;
+    color: var(--writing-color);
+    margin-top: 0;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Course`s teacher info style code */
+.teacher_info {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    padding: 11px 30px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.teacher_info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 3px;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+.teacher_info span {
+    max-width: 59%;
+    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+/* Teacher photo style code */
+.teacher_photo {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.teacher_photo img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--writing-color);
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    z-index: 2;
+    right: -5%;
+    bottom: 87%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+/* Teacher photo :hover animation style code */
+.teacher_photo:hover img {
+    filter: drop-shadow(1px 1px 5px white);
+}
+
+/* Course full info list */
+.course_full_info {
+    display: flex;
+    position: absolute;
+    top: 41.6%;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.course_full_info ul {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.course_full_info ul li {
+    display: flex;
+    align-items: flex-start;
+    margin: 2px;
+}
+
+.course_full_info ul li img {
+    width: 26px;
+    height: 26px;
+    padding-bottom: 5px;
+}
+
+.course_full_info ul li span {
+    padding-left: 20px;
+}
+
+.course_full_info ul li button {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.79;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #ffffff;
+    width: 160%;
+    line-height: 40px;
+    font-family: var(--primary-font);
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Course cards 'JOIN' button style code */
+.writing .course_full_info ul li button {
+    background-color: var(--writing-color);
+}
+
+.reading .course_full_info ul li button {
+    background-color: var(--main-color);
+}
+
+.speaking .course_full_info ul li button {
+    background-color: var(--speaking-color);
+}
+
+.course_full_info .list_info {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    color: #294563;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* ==================== Latest test style code ==================== */
+.lastest .title span {
+    color: #294563;
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    text-align: left;
+}
+
+#lastest_book {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lastest_books img {
+    border-radius: 5px;
+    border: 3px solid #d4dae0;
+    max-width: 270px;
+    max-height: 270px;
+    margin-bottom: 20px;
+}
+
+.lastest_books .book_name {
+    color: #294563;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.lastest_books a {
+    text-decoration: none;
+}
+
+/* Lastest card rating style code */
+.lastest_books .form {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    background-color: red;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.form__btn {
+    margin-top: 20px;
+}
+
+.form-section {
+    margin: 20px 0;
+}
+
+.form__item {
+    margin-bottom: 30px;
+    border: 1px solid red;
+}
+
+.form__title {
+    margin-bottom: 15px;
+}
+
+.simple-rating {
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+}
+
+.simple-rating::before {
+    content: "★★★★★";
+    display: block;
+}
+
+.simple-rating__items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.simple-rating__item {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+}
+
+.simple-rating__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+}
+
+.simple-rating__label::before {
+    content: "★";
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.simple-rating__item:checked,
+.simple-rating__item:checked~.simple-rating__label {
+    color: gold;
+}
+
+.simple-rating__label:hover,
+.simple-rating__label:hover~.simple-rating__label,
+.simple-rating__label:checked~.simple-rating__label:hover {
+    color: #ffef9f;
+}
+
+/* rating js */
+.rating {
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+    line-height: 0.75;
+}
+
+.rating__body {
+    position: relative;
+}
+
+.rating__body::before {
+    content: "★★★★★";
+    display: block;
+}
+
+.rating__active {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.rating__active::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: var(--writing-color);
+}
+
+.rating__items {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.rating__item {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+}
+
+.rating__value {
+    font-size: 70%;
+    color: var(--writing-color);
+    line-height: 1;
+}
+
+/* ==================== company news style code ==================== */
+#container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tips button {
+    height: 44px;
+    min-width: 136px;
+    color: #294563;
+    border-radius: 4px;
+    background-color: var(--writing-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+    border: none;
+    margin-bottom: 40px;
+    transition: all .3s ease-in-out;
+}
+
+.tips button:hover {
+    background-color: #eeb47a;
+}
+
+.tips {
+    --spacing: 25px;
+    --columns: 2;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+    background-color: var(--main-color);
+}
+
+.tips h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    margin: 50px 30px;
+}
+
+.tips .rating__body {
+    display: flex;
+    margin-top: 23px;
+}
+
+.tip_item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 50px 0px rgba(41, 69, 99, 0.08);
+    width: 560px;
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+}
+
+.tip_item .title {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    color: #294563;
+    margin: 0 0 15px;
+}
+
+.tip_item .title .rating-item {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.tip_item .title img {
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    object-fit: cover;
+}
+
+.tip_item .description {
+    font-size: 14px;
+}
+
+.tip_item .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip_item .footer img {
+    width: 24px;
+}
+
+/* ==================== Why Using page style code ==================== */
+.why_using {
+    background: linear-gradient(0deg, #F3F3F3 0%, #F3F3F3 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F3F3F3 100%);
+}
+
+.why_using h2{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 20px;
+    color: #294563;
+    min-height: 30px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.why_using .content {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.why_using .content img {
+    width: 60px;
+    height: 60px;
+}
+
+.why_using .content h3 {
+    font-weight: 700;
+    color: #294563;
+    min-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.why_using .content-item_1 {
+    margin-top: 30px;
+}
+
+/* ==================== Facts page style code */
+.facts .title h2{
+    color: #294563;
+    font-size: 20px;
+    margin: 60px 0px 20px 0px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+.facts .fact_item {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    margin: 40px 0px;
+}
+
+.facts .fact_icon img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.facts .fact_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.facts .fact_text span {
+    font-size: 30px;
+    color: #404040;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.fact .fact_text strong {
+    color: var(--main-color);
+    font-family: var(--primary-font);
+}
+
+/* Animations */
+@keyframes arrow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: rotate(135deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes heroLines {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(200%, -200%, 0) scale3d(1, 1, 1);
+        transform: translate3d(200%, -200%, 0) scale3d(1, 1, 1);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(-200%, 200%, 0) scale3d(0, 0, 0);
+        transform: translate3d(-200%, 200%, 0) scale3d(0, 0, 0);
+    }
+}
+
+@keyframes movePerson {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 100%, 0) scale3d(0.7, 0.7, 0.7);
+        transform: translate3d(-100%, 100%, 0) scale3d(0.7, 0.7, 0.7);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+}
+
+@keyframes moveArrow {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 100%, 0);
+        transform: translate3d(-100%, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes moveArrowDistance {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(70px, -70px, 0);
+    }
+}
+
+@keyframes moveArrowDistance15 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+
+    50%,
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate3d(150px, -150px, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes buttonFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IELTS Exam Library | IELTS Online Tests</title>
+    <link rel="shortcut icon" href="static/images/short_logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="static/styles/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="https://ieltsonlinetests.com/themes/iot/images/logo.svg" alt="site_logo" class="site_logo" />
+        <img src="https://ads.intergreat.com/www/images/6b4d23dc7f2685b8c3f3d4a83a976e89.png" alt="banner"
+            class="banner" />
+    </header>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#" class="home_link">
+                    <img src="static/images/home.png" alt="home_icon" class="home_icon" />
+                </a>
+            </li>
+            <li class="nav_item" id="nav_item">
+                <a href="#" class="">
+                    <span>IELTS Exam Library</span>
+                    <img src="static/svg/arrow.svg" alt="nav_item_arrow" id="nav_item_arrow" />
+                </a>
+            </li>
+            <li class="nav_item" id="nav_item">
+                <a href="#">
+                    <span>IELTS Tips</span>
+                    <img src="static/svg/arrow.svg" alt="nav_item_arrow" id="nav_item_arrow" />
+                </a>
+            </li>
+            <li class="nav_item" id="nav_item">
+                <a href="#">
+                    <span>IELTS Prep</span>
+                    <img src="static/svg/arrow.svg" alt="nav_item_arrow" id="nav_item_arrow" />
+                </a>
+            </li>
+            <li class="nav_item" id="nav_item">
+                <a href="#">
+                    <span>Live Lessons </span>
+                    <img src="static/svg/arrow.svg" alt="nav_item_arrow" id="nav_item_arrow" />
+                </a>
+            </li>
+            <li class="nav_item_special" id="nav_item">
+                <a href="#">
+                    <span>InterGreat Study Abroad </span>
+                    <img src="static/svg/arrow.svg" alt="nav_item_arrow" id="nav_item_arrow" />
+                </a>
+            </li>
+        </ul>
+        <ul class="nav_item_account">
+            <li>
+                <a href="#"><span>Sign Up</span></a>
+            </li>
+            <li>
+                <a href="#"><span>Log In</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="nav_items_content">
+        <div class="ielts_library" id="dropdown_menu">
+            <ul>
+                <li><a href="#">IELTS Listening Tests</a></li>
+                <li><a href="#">IELTS Reading Tests</a></li>
+                <li><a href="#">IELTS Writing Tests</a></li>
+                <li><a href="#">IELTS Speaking Tests</a></li>
+            </ul>
+        </div>
+        <div class="ielts_tips" id="dropdown_menu">
+            <ul>
+                <li><a href="#">Listening Tips</a></li>
+                <li><a href="#">Reading Tips</a></li>
+                <li><a href="#">Speaking Tips</a></li>
+                <li><a href="#">Writing Tips</a></li>
+                <li><a href="#">IELTS Grammar</a></li>
+                <li><a href="#">Announcements</a></li>
+            </ul>
+        </div>
+        <div class="ielts_prep" id="dropdown_menu">
+            <ul>
+                <li>
+                    <a href="">IELTS Writing Services
+                        <i style="font-size: 24px" class="fa" id="arrow_right">&#xf101;</i></a>
+                </li>
+                <li>
+                    <a href="">IELTS Speaking Services
+                        <i style="font-size: 24px" class="fa" id="arrow_right">&#xf101;</i></a>
+                </li>
+                <li>
+                    <a href="">IELTS Listening Services
+                        <i style="font-size: 24px" class="fa" id="arrow_right">&#xf101;</i></a>
+                </li>
+                <li>
+                    <a href="">IELTS Reading Services
+                        <i style="font-size: 24px" class="fa" id="arrow_right">&#xf101;</i></a>
+                </li>
+                <li>
+                    <a href="">IELTS Video Courses
+                        <i style="font-size: 24px" class="fa" id="arrow_right">&#xf101;</i></a>
+                </li>
+                <li><a href="">IELTS AI cheacker</a></li>
+            </ul>
+        </div>
+        <div class="ielts_lesson" id="dropdown_menu"></div>
+        <div class="ielts_course" id="dropdown_menu"></div>
+        <div class="ielts_abroad" id="dropdown_menu"></div>
+    </div>
+    <main>
+        <!-- Slider Section -->
+        <div class="swiper-container" id="main_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider_content_hero_page">
+                        <div class="text_content_part">
+                            <div class="title" data-aos="fade-up">
+                                <h1>WE TAKE YOUR </h1>
+                                <strong>IELTS SCORE HIGHER</strong>
+                            </div>
+                            <div class="more_info" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Get ready for your 2024 IELTS exam by practicing our 100+ IELTS mock tests
+                                    <strong>for FREE</strong>
+                                </p>
+                            </div>
+                            <div class="students_part" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"
+                                data-aos-delay="0">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/students-group.png"
+                                    alt="students_img">
+                                <p>28,000,000 students are using our free services.</p>
+                            </div>
+                            <div class="button_part">
+                                <button>START NOW</button>
+                            </div>
+                        </div>
+
+                        <div class="animation_part">
+                            <div class="hero_animation">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-person.svg"
+                                    alt="hero-person" class="hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-arrow-1.svg" alt="arrow"
+                                    class="arrow_hero_1">
+                            </div>
+                            <div class="arrows">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-arrow-2.svg" alt="arrow"
+                                    class="arrow_hero_2">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-arrow-3.svg" alt="arrow"
+                                    class="arrow_hero_3">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-arrow-4.svg" alt="arrow"
+                                    class="arrow_hero_4">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-arrow-5.svg" alt="arrow"
+                                    class="arrow_hero_5">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-arrow-6.svg" alt="arrow"
+                                    class="arrow_hero_6">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-arrow-7.svg" alt="arrow"
+                                    class="arrow_hero_7">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-arrow-8.svg" alt="arrow"
+                                    class="arrow_hero_8">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-arrow-9.svg" alt="arrow"
+                                    class="arrow_hero_9">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-arrow-10.svg" alt="arrow"
+                                    class="arrow_hero_10">
+                            </div>
+                            <div class="lines">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_1" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_2" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_3" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_4" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_5" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_6" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_7" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_8" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_9" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_10" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_11" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_12" id="line_hero">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/hero-line-1.svg"
+                                    alt="dropped_line" class="line_hero_13" id="line_hero">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider_content_certificate">
+                        <canvas id="nokey" height="530"></canvas>
+                        <div class="darkness"></div>
+                        <div class="texture"></div>
+
+                        <div class="content">
+                            <div class="text_content">
+                                <div class="title">
+                                    <img src="	https://ieltsonlinetests.com/themes/iot/images/logos/intergreat-logo-en.svg"
+                                        alt="intergreat-logo-en" />
+                                    <img src="https://ieltsonlinetests.com/themes/iot/images/logos/iot-logo-en.svg"
+                                        alt="iot-logo-en" />
+                                </div>
+
+                                <div class="content">
+                                    <p class="content_title">Proud to be</p>
+                                    <img src="https://ieltsonlinetests.com/themes/iot/images/iot-banner-text-platinum.svg"
+                                        alt="iot-banner-text" />
+                                    <p class="content_info">Member</p>
+                                    <span class="more_info">of the<strong>British Council Partnership
+                                            Programme</strong></span>
+                                    <button>LEARN MORE</button>
+                                </div>
+                            </div>
+
+                            <div class="certificate">
+                                <img src="https://ieltsonlinetests.com/themes/iot/images/IEG-certificate.png" alt="certificate"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Our courses Section -->
+        <div class="courses">
+            <div class="container">
+                <div class="banner">
+                    <img src="https://ads.intergreat.com/www/images/8302f0dff75ff3856ff82c484c11e70f.png"
+                        alt="banner_for_courses">
+                </div>
+
+                <div class="title">
+                    <h2>Join our live lessons for advice from the experts <span>NEW</span></h2>
+                </div>
+
+                <div class="description">
+                    <span>Build your confidence in all IELTS skills and prepare for studying abroad with our daily live
+                        lessons</span>
+                </div>
+
+
+                <div class="courses_card row">
+                    <a href="#" class="col-xs-12 col-sm-12  col-md-12 col-lg-4">
+                        <div class="title_writing">
+                            <span>Writing</span>
+                        </div>
+                        <div class="writing">
+                            <div class="content">
+                                <div class="course_photo">
+                                    <div class="course_photo_bg">
+                                        <div class="darkness"></div><img src="static/images/writing_people.png"
+                                            alt="course_photo_bg">
+                                    </div>
+                                    <div class="course_name">
+                                        <h3>Academic Writing Task 1 - Describing Maps: Changes in the Past</h3>
+                                    </div>
+
+                                    <div class="course_teacher">
+                                        <span>Gillian S. </span>
+                                    </div>
+
+                                    <div class="teacher_info">
+                                        <img
+                                            src="https://ieltsonlinetests.com/sites/default/files/2023-01/Subtitle%3DLogo%20Alone%2C%20Dimension%3DHorizontal%2C%20Used%20for%3DGlobal%2C%20Color%3DNew%2C%20Background%3DWithout.png">
+                                        <span>InterGreat Education Group</span>
+                                    </div>
+                                    <div class="teacher_photo">
+                                        <img src="https://ieltsonlinetests.com/sites/default/files/styles/crop_200x200/public/2022-09/Gillian%20Scott%20-%20New%20Profile%20Photo.jpg"
+                                            alt="teacher_photo">
+                                    </div>
+                                </div>
+                                <div class="course_full_info">
+                                    <ul>
+                                        <li>
+                                            <img src="static/svg/calendar.svg" alt="calendar_icon">
+                                            <span class="list_info">15/07/2024</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/clock.svg" alt="clock_icon">
+                                            <span class="list_info">17:00 - 18:00 (GMT +5)</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/peoples.svg" alt="peoples_icon">
+                                            <span class="list_info">800+ Attending</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/message.svg" alt="message_icon">
+                                            <span class="list_info">English</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/price.svg" alt="money_icon">
+                                            <span class="list_info">Free</span>
+                                        </li>
+                                        <li>
+                                            <div class="container-fluid">
+                                                <button>JOIN</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="col-xs-12 col-sm-12  col-md-12 col-lg-4">
+                        <div class="title_reading">
+                            <span>Reading</span>
+                        </div>
+                        <div class="reading">
+                            <div class="content">
+                                <div class="course_photo">
+                                    <div class="course_photo_bg">
+                                        <div class="darkness"></div><img
+                                            src="https://image.popbela.com/content-images/post/20240428/a12e1fc66788ea3ed2f49d01589db05d.jpg?width=1600&format=webp&w=1600"
+                                            alt="course_photo_bg">
+                                    </div>
+                                    <div class="course_name">
+                                        <h3>Academic Writing Task 1 - Describing Maps: Changes in the Past</h3>
+                                    </div>
+
+                                    <div class="course_teacher">
+                                        <span>Gillian S. </span>
+                                    </div>
+
+                                    <div class="teacher_info">
+                                        <img
+                                            src="https://ieltsonlinetests.com/sites/default/files/2023-01/Subtitle%3DLogo%20Alone%2C%20Dimension%3DHorizontal%2C%20Used%20for%3DGlobal%2C%20Color%3DNew%2C%20Background%3DWithout.png">
+                                        <span>InterGreat Education Group</span>
+                                    </div>
+                                    <div class="teacher_photo">
+                                        <img src="https://ieltsonlinetests.com/sites/default/files/styles/crop_200x200/public/2022-07/tomas.jpg"
+                                            alt="teacher_photo">
+                                    </div>
+                                </div>
+                                <div class="course_full_info">
+                                    <ul>
+                                        <li>
+                                            <img src="static/svg/calendar.svg" alt="calendar_icon">
+                                            <span class="list_info">15/07/2024</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/clock.svg" alt="clock_icon">
+                                            <span class="list_info">17:00 - 18:00 (GMT +5)</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/peoples.svg" alt="peoples_icon">
+                                            <span class="list_info">800+ Attending</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/message.svg" alt="message_icon">
+                                            <span class="list_info">English</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/price.svg" alt="money_icon">
+                                            <span class="list_info">Free</span>
+                                        </li>
+                                        <li>
+                                            <div class="container">
+                                                <button>JOIN</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="col-xs-12 col-sm-12  col-md-12 col-lg-4">
+                        <div class="title_speaking">
+                            <span>Speaking</span>
+                        </div>
+                        <div class="speaking">
+                            <div class="content">
+                                <div class="course_photo">
+                                    <div class="course_photo_bg">
+                                        <div class="darkness"></div><img src="static/images/writing_people.png"
+                                            alt="course_photo_bg">
+                                    </div>
+                                    <div class="course_name">
+                                        <h3>Academic Writing Task 1 - Describing Maps: Changes in the Past</h3>
+                                    </div>
+
+                                    <div class="course_teacher">
+                                        <span>Gillian S. </span>
+                                    </div>
+
+                                    <div class="teacher_info">
+                                        <img
+                                            src="https://ieltsonlinetests.com/sites/default/files/2023-01/Subtitle%3DLogo%20Alone%2C%20Dimension%3DHorizontal%2C%20Used%20for%3DGlobal%2C%20Color%3DNew%2C%20Background%3DWithout.png">
+                                        <span>InterGreat Education Group</span>
+                                    </div>
+                                    <div class="teacher_photo">
+                                        <img src="https://ieltsonlinetests.com/sites/default/files/styles/crop_200x200/public/2022-09/Gillian%20Scott%20-%20New%20Profile%20Photo.jpg"
+                                            alt="teacher_photo">
+                                    </div>
+                                </div>
+                                <div class="course_full_info">
+                                    <ul>
+                                        <li>
+                                            <img src="static/svg/calendar.svg" alt="calendar_icon">
+                                            <span class="list_info">15/07/2024</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/clock.svg" alt="clock_icon">
+                                            <span class="list_info">17:00 - 18:00 (GMT +5)</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/peoples.svg" alt="peoples_icon">
+                                            <span class="list_info">800+ Attending</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/message.svg" alt="message_icon">
+                                            <span class="list_info">English</span>
+                                        </li>
+                                        <li>
+                                            <img src="static/svg/price.svg" alt="money_icon">
+                                            <span class="list_info">Free</span>
+                                        </li>
+                                        <li>
+                                            <div class="container">
+                                                <button>JOIN</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="explore_more">
+                    <button>Explore More</button>
+                </div>
+
+                <div class="lastest">
+                    <div class="title"><span>Latest IELTS test releases:</span></div>
+                </div>
+
+                <div class="lastest_books row">
+                    <div class="container col-xs-12 col-sm-12  col-md-12 col-lg-3">
+                        <div class="book_december" id="lastest_book">
+                            <a href="#">
+                                <img src="https://ieltsonlinetests.com/sites/default/files/styles/latest_collection/public/2023-01/IELTS%20Mock%20Test%202023-12.jpg"
+                                    alt="december_latest_book">
+                                <span class="book_name"> IELTS Mock Test 2023 December </span>
+                            </a>
+                            <div class="form">
+                                <div data-ajax="true" class="rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" name="js-rating" value="1">
+                                            <input type="radio" class="rating__item" name="js-rating" value="2">
+                                            <input type="radio" class="rating__item" name="js-rating" value="3">
+                                            <input type="radio" class="rating__item" name="js-rating" value="4">
+                                            <input type="radio" class="rating__item" name="js-rating" value="5">
+                                        </div>
+                                    </div>
+
+                                    <div class="rating__value">3.6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container col-xs-12 col-sm-12  col-md-12 col-lg-3">
+                        <div class="book_december" id="lastest_book">
+                            <a href="#">
+                                <img src="https://ieltsonlinetests.com/sites/default/files/styles/latest_collection/public/2023-01/IELTS%20Mock%20Test%202023-09.jpg"
+                                    alt="december_latest_book">
+                                <span class="book_name"> IELTS Mock Test 2023 September </span>
+                            </a>
+                            <div class="form">
+                                <div data-ajax="true" class="rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" name="js-rating" value="1">
+                                            <input type="radio" class="rating__item" name="js-rating" value="2">
+                                            <input type="radio" class="rating__item" name="js-rating" value="3">
+                                            <input type="radio" class="rating__item" name="js-rating" value="4">
+                                            <input type="radio" class="rating__item" name="js-rating" value="5">
+                                        </div>
+                                    </div>
+
+                                    <div class="rating__value">3.6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container col-xs-12 col-sm-12  col-md-12 col-lg-3">
+                        <div class="book_december" id="lastest_book">
+                            <a href="#">
+                                <img src="https://ieltsonlinetests.com/sites/default/files/styles/latest_collection/public/2020-11/PTp1%20copy%205.jpg"
+                                    alt="december_latest_book">
+                                <span class="book_name"> IELTS Practice Test Volume 8 </span>
+                            </a>
+                            <div class="form">
+                                <div data-ajax="true" class="rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" name="js-rating" value="1">
+                                            <input type="radio" class="rating__item" name="js-rating" value="2">
+                                            <input type="radio" class="rating__item" name="js-rating" value="3">
+                                            <input type="radio" class="rating__item" name="js-rating" value="4">
+                                            <input type="radio" class="rating__item" name="js-rating" value="5">
+                                        </div>
+                                    </div>
+
+                                    <div class="rating__value">3.6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container col-xs-12 col-sm-12  col-md-12 col-lg-3">
+                        <div class="book_december" id="lastest_book">
+                            <a href="#">
+                                <img src="https://ieltsonlinetests.com/sites/default/files/styles/latest_collection/public/2021-05/IELTS%20General%20Training%20Cover-02.png"
+                                    alt="december_latest_book">
+                                <span class="book_name"> Prepare for IELTS General Training Volume 2 </span>
+                            </a>
+                            <div class="form">
+                                <div data-ajax="true" class="rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" name="js-rating" value="1">
+                                            <input type="radio" class="rating__item" name="js-rating" value="2">
+                                            <input type="radio" class="rating__item" name="js-rating" value="3">
+                                            <input type="radio" class="rating__item" name="js-rating" value="4">
+                                            <input type="radio" class="rating__item" name="js-rating" value="5">
+                                        </div>
+                                    </div>
+
+                                    <div class="rating__value">3.6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- IELTS Tips Section -->
+        <div class="tips">
+            <div class="container">
+                <h2>IELTS tip of the day</h2>
+            </div>
+            <div class="container" id="container">
+                <div class="tip_item">
+                    <div class="title">
+                        <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/styles/tips_front/oss/listening.jpg"
+                            alt="IELTS_tip_img_1">
+                        <div class="text_part">
+                            <span>5 Penalty Areas for Indian Students in IELTS Listening</span>
+                            <div class="form">
+                                <div data-ajax="true" class="rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" name="js-rating" value="1">
+                                            <input type="radio" class="rating__item" name="js-rating" value="2">
+                                            <input type="radio" class="rating__item" name="js-rating" value="3">
+                                            <input type="radio" class="rating__item" name="js-rating" value="4">
+                                            <input type="radio" class="rating__item" name="js-rating" value="5">
+                                        </div>
+                                    </div>
+                                    <div class="rating__value">3.5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <span>Since Indian students are writing and speaking in English with Indian accent, with not
+                            much exposure to foreign accent, it can be the cause of s...</span>
+                    </div>
+                    <div class="footer">
+                        <div class="tag">
+                            <img src="static/svg/tag.svg" alt="tag_icon">
+                            <span>Listening Tips</span>
+                        </div>
+                        <div class="views">
+                            <img src="static/svg/eye.svg" alt="views_icon">
+                            <span>79,287</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip_item">
+                    <div class="title">
+                        <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/styles/tips_front/oss/2021-11/IELTStips_110IELTSWordlist.png"
+                            alt="IELTS_tip_img_2">
+                        <div class="text_part">
+                            <span>110 IELTS Words, IELTS Vocabulary List </span>
+                            <div class="form">
+                                <div data-ajax="true" class="rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" name="js-rating" value="1">
+                                            <input type="radio" class="rating__item" name="js-rating" value="2">
+                                            <input type="radio" class="rating__item" name="js-rating" value="3">
+                                            <input type="radio" class="rating__item" name="js-rating" value="4">
+                                            <input type="radio" class="rating__item" name="js-rating" value="5">
+                                        </div>
+                                    </div>
+                                    <div class="rating__value">3.8</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="description">
+                        <span>1.analogy
+                            2.analysis
+                            3.analyze
+                            4.annotate
+                            5.anticipate
+                            6.application
+                            7.apply
+                            8.approach
+                            9.associate
+                            10.assume
+                            11.assumpt...</span>
+                    </div>
+                    <div class="footer">
+                        <div class="tag">
+                            <img src="static/svg/tag.svg" alt="tag_icon">
+                            <span>Listening Tips</span>
+                        </div>
+                        <div class="views">
+                            <img src="static/svg/eye.svg" alt="views_icon">
+                            <span>183,532</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip_item">
+                    <div class="title">
+                        <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/styles/tips_front/oss/2020-11/rsz_ieltstips_commonspellingerrorsfinal%20%281%29.jpg"
+                            alt="IELTS_tip_img_3">
+                        <div class="text_part">
+                            <span>Common Spelling Errors and How to Avoid Them</span>
+                            <div class="form">
+                                <div data-ajax="true" class="rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" name="js-rating" value="1">
+                                            <input type="radio" class="rating__item" name="js-rating" value="2">
+                                            <input type="radio" class="rating__item" name="js-rating" value="3">
+                                            <input type="radio" class="rating__item" name="js-rating" value="4">
+                                            <input type="radio" class="rating__item" name="js-rating" value="5">
+                                        </div>
+                                    </div>
+                                    <div class="rating__value">3.6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <span>Many students often make mistakes in writing some words incorrectly as they are ambiguous about their spellings. Committing spelling errors can...</span>
+                    </div>
+                    <div class="footer">
+                        <div class="tag">
+                            <img src="static/svg/tag.svg" alt="tag_icon">
+                            <span>Listening Tips</span>
+                        </div>
+                        <div class="views">
+                            <img src="static/svg/eye.svg" alt="views_icon">
+                            <span>72,985</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip_item">
+                    <div class="title">
+                        <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/styles/tips_front/oss/2020-12/pronunciation.png"
+                            alt="IELTS_tip_img_4">
+                        <div class="text_part">
+                            <span>How To Improve Your Pronunciation</span>
+                            <div class="form">
+                                <div data-ajax="true" class="rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" name="js-rating" value="1">
+                                            <input type="radio" class="rating__item" name="js-rating" value="2">
+                                            <input type="radio" class="rating__item" name="js-rating" value="3">
+                                            <input type="radio" class="rating__item" name="js-rating" value="4">
+                                            <input type="radio" class="rating__item" name="js-rating" value="5">
+                                        </div>
+                                    </div>
+                                    <div class="rating__value">3.2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <span>Below we share with you ten tips that will help improve your pronunciations
+                            1. Decide on the option of English
+                            English has different ways of pro...</span>
+                    </div>
+                    <div class="footer">
+                        <div class="tag">
+                            <img src="static/svg/tag.svg" alt="tag_icon">
+                            <span>Listening Tips</span>
+                        </div>
+                        <div class="views">
+                            <img src="static/svg/eye.svg" alt="views_icon">
+                            <span>102,637</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="btn-container">
+                <a href="#"><button>See more</button></a>
+            </div>
+        </div>
+
+        <!-- Why Using Section -->
+        <div class="why_using">
+            <div class="container">
+                <div class="title">
+                    <h2>Why use IELTS Online Tests?</h2>
+                </div>
+                <div class="content row">
+                    <div class="content-item_1 col-xs-12 col-sm-8 col-md-4 col-lg-4">
+                        <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/why-folders_0_0.png" alt="content_icon">
+                        <h3>Take recent actual IELTS Tests</h3>
+                        <span>Real IELTS Listening and IELTS Reading tests based on actual IELTS tests and following the Cambridge IELTS book format.</span>
+                    </div>
+
+                    <div class="content-item_1 col-xs-12 col-sm-8 col-md-4 col-lg-4">
+                        <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/why-online-meeting_0_0.png" alt="content_icon">
+                        <h3>Community-driven</h3>
+                        <span>Created by our community of IELTS teachers, previous IELTS examiners and IELTS exam takers.</span>
+                    </div>
+
+                    <div class="content-item_1 col-xs-12 col-sm-8 col-md-4 col-lg-4">
+                        <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/why-online-meeting-2_0_0.png" alt="content_icon">
+                        <h3>Comprehensive analytics tool</h3>
+                        <span>Our IELTS Analytics is a tool that allows you to set a target IELTS band score, analyse your progress and find how to improve.</span>
+                    </div>
+
+                    <div class="content-item_1 col-xs-12 col-sm-8 col-md-4 col-lg-4">
+                        <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/why-bullets_0_0.png" alt="content_icon">
+                        <h3>View IELTS Score and Answer Explanations</h3>
+                        <span>After taking our IELTS mock tests with real audio, you can check your Listening or Reading band score and view your answer sheets.</span>
+                    </div>
+
+                    <div class="content-item_1 col-xs-12 col-sm-8 col-md-4 col-lg-4">
+                        <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/why-online-booking_0_0.png" alt="content_icon">
+                        <h3>FREE to use</h3>
+                        <span>Our online IELTS tests are always free. We are here to help users for study abroad, immigration and finding jobs.</span>
+                    </div>
+
+                    <div class="content-item_1 col-xs-12 col-sm-8 col-md-4 col-lg-4">
+                        <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/why-chat-icon_0_0.png" alt="content_icon">
+                        <h3>Increase your IELTS band score</h3>
+                        <span>Using our online tests for IELTS preparation is proven to help students improve by 0.5 - 1.5 .</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Facts Section -->
+        <div class="facts">
+            <div class="container">
+                <div class="title">
+                    <h2>Number #1 for IELTS Preparation</h2>
+                </div>
+                <div class="content row">
+                    <div class="fact_item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="fact_icon">
+                            <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/pins-icon_0_0.png" alt="fact_icon">
+                        </div>
+                        <div class="fact_text">
+                            <span>120+</span>
+                            <strong>Countries</strong>
+                        </div>
+                    </div>
+                    <div class="fact_item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="fact_icon">
+                            <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/target-icon_0_0.png" alt="fact_icon">
+                        </div>
+                        <div class="fact_text">
+                            <span>28.000.000+</span>
+                            <strong>Test Takers</strong>
+                        </div>
+                    </div>
+                    <div class="fact_item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="fact_icon">
+                            <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/qa-icon_0_0.png" alt="fact_icon">
+                        </div>
+                        <div class="fact_text">
+                            <span>7.000.000+</span>
+                            <strong>Completed Tests</strong>
+                        </div>
+                    </div>
+                    <div class="fact_item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="fact_icon">
+                            <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/graduate-icon_0_0.png" alt="fact_icon">
+                        </div>
+                        <div class="fact_text">
+                            <span>100+</span>
+                            <strong>Academic Tests</strong>
+                        </div>
+                    </div>
+                    <div class="fact_item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="fact_icon">
+                            <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/people-group-icon_0_0.png" alt="fact_icon">
+                        </div>
+                        <div class="fact_text">
+                            <span>20+</span>
+                            <strong>General Training Tests</strong>
+                        </div>
+                    </div>
+                    <div class="fact_item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="fact_icon">
+                            <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/2023-07/online-question%201_0_0.png" alt="fact_icon">
+                        </div>
+                        <div class="fact_text">
+                            <span>10,000+</span>
+                            <strong>Total Questions</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Say Section -->
+         <div class="say">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                </div>
+            </div>
+         </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="static/scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
