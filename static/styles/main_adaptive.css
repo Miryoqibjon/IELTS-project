@@ -1,9 +1,15 @@
 /* Responsive style code */
-@media (min-width:1280px) {
+@media (min-width:1400px) {
     .teacher_photo img {
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
         bottom: 0px;
+    }
+    .course_name h3 {
+        font-size: 130%;
+    }
+    .course_full_info ul {
+        min-width: 412px;
     }
 }
 
@@ -91,6 +97,7 @@
 
     .slider_content_certificate>.content img {
         margin: 10px;
+        margin-left: 0px;
     }
 
     .header_for_mobile img {
@@ -139,6 +146,21 @@
     }
     .why_using .title {
         padding-top: 30px;
+    }
+    .features .features_item {
+        flex-direction: column;
+    }
+    footer .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:880px) {
+    .certificate_img {
+        height: 290px;
+    }
+    .more_info {
+        font-size: 14px;
     }
 }
 

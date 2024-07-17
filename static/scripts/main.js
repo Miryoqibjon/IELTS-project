@@ -156,11 +156,6 @@ function updateBalls() {
     balls = new_balls.slice(0);
 }
 
-// loop alpha
-function loopAlphaInf() {
-
-}
-
 // Draw lines
 function renderLines() {
     var fraction, alpha;
@@ -272,7 +267,6 @@ new Swiper('#main_swiper', {
     effect: 'slide',
 });
 
-
 jQuery(document).ready(function ($) {
     var owl = $("#owl-demo-2");
     owl.owlCarousel({
@@ -281,7 +275,7 @@ jQuery(document).ready(function ($) {
         autoplay: true,
         autoplayTimeout: 2500,
         autoplayHoverPause: true,
-        items: 3,
+        items: 4,
         center: false,
         rewind: false,
         mouseDrag: true,
@@ -474,5 +468,73 @@ const numberOne = Math.round(Math.random() * 9)
 const numberTwo = Math.round(Math.random() * 9)
 let result = numberOne + numberTwo
 
-document.getElementById('num_one').textContent = numberOne 
-document.getElementById('num_two').textContent = numberTwo 
+document.getElementById('num_one').textContent = numberOne
+document.getElementById('num_two').textContent = numberTwo
+
+// ========== Server JS (Account system) Script ==========
+$(document).ready(function () {
+    $("#show-register").click(function () {
+        $("#login-form").hide();
+        $("#register-form").show();
+    });
+
+    $("#show-login").click(function () {
+        $("#register-form").hide();
+        $("#login-form").show();
+    });
+
+    // Обработка формы входа
+    $("#login-form-data").submit(function (event) {
+        event.preventDefault();
+
+        var email = $("#login-email").val();
+        var password = $("#login-password").val();
+
+        $.ajax({
+            url: 'http://localhost:3000/login', // Адрес сервера Node.js
+            method: "POST",
+            data: {
+                email: email,
+                password: password
+            },
+            dataType: 'json',
+            success: function (response) {
+                if (response.success) {
+                    // Успешный вход
+                    alert("Вход выполнен успешно!");
+                } else {
+                    // Ошибка входа
+                    alert(response.message);
+                }
+            }
+        });
+    });
+
+    // Обработка формы регистрации
+    $("#register-form-data").submit(function (event) {
+        event.preventDefault();
+
+        var email = $("#register-email").val();
+        var password = $("#register-password").val();
+
+        $.ajax({
+            url: 'http://localhost:3000/register', // Адрес сервера Node.js
+            method: "POST",
+            data: {
+                email: email,
+                password: password
+            },
+            dataType: 'json',
+            success: function (response) {
+                if (response.success) {
+                    // Успешная регистрация
+                    alert("Регистрация успешна!");
+                    $("#show-login").click(); // Переключаем форму на вход
+                } else {
+                    // Ошибка регистрации
+                    alert(response.message);
+                }
+            }
+        });
+    });
+});

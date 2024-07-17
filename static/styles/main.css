@@ -108,6 +108,22 @@ nav ul li a {
     transition: all ease 0.2s;
 }
 
+.account-system {
+    display: flex;
+    align-items: center;
+}
+
+.account-system a {
+    color: #fff;
+    font-weight: 700;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.account-system a:hover {
+    color: #fff;
+}
+
 /* ==================== Main style code ==================== */
 #main_swiper {
     position: relative;
@@ -1266,6 +1282,7 @@ canvas {
     min-height: 30px;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .why_using .content-item_1 {
@@ -1341,7 +1358,10 @@ canvas {
 .say .say_item {
     text-align: center;
     margin: 20px 0px;
-    max-width: 380px;
+}
+
+.say .owl-item {
+    width: 360px !important;
 }
 
 .say .say_icon img {
