@@ -1,62 +1,5 @@
 AOS.init();
 
-// ====================Dropdown Menu Script====================
-const hoverTargetsDropDown = document.querySelectorAll('#nav_item');
-const changeTargetsDropDown = document.querySelectorAll('#dropdown_menu');
-const changeTargetsArrow = document.querySelectorAll('#nav_item_arrow');
-
-hoverTargetsDropDown.forEach((hoverTarget, index) => {
-    hoverTarget.addEventListener('mouseover', () => {
-        const changeTarget = changeTargetsDropDown[index];
-        const changeTargetArrow = changeTargetsArrow[index];
-        changeTargetArrow.style.transition = 'transform 0.3s ease-in-out';
-        changeTarget.style.display = 'flex';
-        hoverTargetsDropDown.forEach((otherTarget, otherIndex) => {
-            if (otherIndex !== index) {
-                otherTarget.style.backgroundColor = '#294563';
-                document.querySelector('.nav_item_special').style.backgroundColor = '#C76378'
-            }
-        });
-        changeTargetsDropDown.forEach((otherTarget, otherIndex) => {
-            if (otherIndex !== index) {
-                otherTarget.style.display = 'none';
-            }
-            if (!changeTarget.matches(':hover')) {
-                hoverTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
-                document.querySelector('.nav_item_special').style.backgroundColor = '#C76378'
-            }
-        });
-        changeTargetArrow.style.transform = 'rotate(180deg)';
-    });
-
-    hoverTarget.addEventListener('mouseout', () => {
-        const changeTarget = changeTargetsDropDown[index];
-        hoverTarget.style.backgroundColor = '#294563';
-        document.querySelector('.nav_item_special').style.backgroundColor = '#C76378'
-        if (!changeTarget.matches(':hover')) {
-            changeTarget.style.display = 'none';
-        }
-        if (changeTarget.matches(':hover')) {
-            hoverTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
-        }
-        changeTargetsArrow[index].style.transform = 'rotate(0deg)';
-    });
-
-    changeTargetsDropDown[index].addEventListener('mouseover', () => {
-        const changeTargetArrow = changeTargetsArrow[index];
-        changeTargetArrow.style.transform = 'rotate(180deg)';
-    })
-
-    changeTargetsDropDown[index].addEventListener('mouseleave', () => {
-        const changeTarget = changeTargetsDropDown[index];
-        changeTarget.style.display = 'none';
-        hoverTarget.style.backgroundColor = '#294563';
-        document.querySelector('.nav_item_special').style.backgroundColor = '#C76378'
-        const changeTargetArrow = changeTargetsArrow[index];
-        changeTargetArrow.style.transform = 'rotate(0deg)';
-    });
-});
-
 // ====================Canvas Script====================
 var canvas = document.getElementById('nokey'),
     can_w = parseInt(canvas.getAttribute('width')),
@@ -75,11 +18,11 @@ var ball = {
     phase: 0
 },
     ball_color = {
-        r: 23,
-        g: 38,
-        b: 54
+        r: 51,
+        g: 51,
+        b: 51
     },
-    R = 2,
+    R = 4,
     balls = [],
     alpha_f = 0.03,
     alpha_phase = 0,
@@ -329,6 +272,77 @@ new Swiper('#main_swiper', {
     effect: 'slide',
 });
 
+
+jQuery(document).ready(function ($) {
+    var owl = $("#owl-demo-2");
+    owl.owlCarousel({
+        loop: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        items: 3,
+        center: false,
+        rewind: false,
+        mouseDrag: true,
+        touchDrag: true,
+        pullDrag: true,
+        freeDrag: false,
+        margin: 0,
+        stagePadding: 0,
+        merge: false,
+        mergeFit: true,
+        autoWidth: false,
+        startPosition: 0,
+        rtl: false,
+        smartSpeed: 1000,
+        fluidSpeed: false,
+        dragEndSpeed: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 2,
+                nav: false
+            },
+            768: {
+                items: 3,
+            },
+            992: {
+                items: 3,
+            }
+        },
+        responsiveRefreshRate: 200,
+        responsiveBaseElement: window,
+        fallbackEasing: "swing",
+        info: false,
+        nestedItemSelector: false,
+        itemElement: "div",
+        stageElement: "div",
+        refreshClass: "owl-refresh",
+        loadedClass: "owl-loaded",
+        loadingClass: "owl-loading",
+        rtlClass: "owl-rtl",
+        responsiveClass: "owl-responsive",
+        dragClass: "owl-drag",
+        itemClass: "owl-item",
+        stageClass: "owl-stage",
+        stageOuterClass: "owl-stage-outer",
+        grabClass: "owl-grab",
+        autoHeight: false,
+        lazyLoad: false,
+    });
+
+    $(".next").click(function () {
+        owl.trigger("owl.next");
+    });
+    $(".prev").click(function () {
+        owl.trigger("owl.prev");
+    });
+});
+
+
 // ====================Rating System Script====================
 const ratings = document.querySelectorAll('.rating');
 
@@ -393,12 +407,11 @@ function initRatings() {
 
 }
 
-/* ajax */
 async function setRatingValue(value, rating) {
     if (!rating.classList.contains('rating_sending')) {
         rating.classList.add('rating_sending');
 
-        // Reting JSON HOZIRCHA YO`Q SHUNGA ISHLAMIDI
+        // ========= Reting JSON HOZIRCHA YO`Q SHUNGA ISHLAMIDI =========
         let response = await fetch('rating.json', {
             method: 'GET',
 
@@ -422,3 +435,44 @@ async function setRatingValue(value, rating) {
         }
     }
 }
+
+// ==================== Form Script ====================
+const userRoleSelect = document.getElementById('user_role');
+let userRolesContainer = document.querySelector('.user_roles_block')
+let subRoleSelect = document.querySelector('#subrole_select')
+
+userRoleSelect.addEventListener('change', () => {
+    const selectedValue = userRoleSelect.value;
+    if (selectedValue == 'Student') {
+        subRoleSelect.innerHTML = `
+                <select id="student_select" style="margin-top: 30px">
+                    <option value selected="selected" style="display: none;" >-- About to --</option>
+                    <option id="role" value="Custom lesson package">Custom lesson package</option>
+                    <option id="role" value="Report mistake/bug">Report mistake/bug</option>
+                    <option id="role" value="Payment problem">Payment problem</option>
+                    <option id="role" value="Suggestion">Suggestion</option>
+                    <option id="role" value="Others">Others</option>
+                </select>
+        `
+    }
+    else if (selectedValue == 'IELTS Teacher/Examiner') {
+        subRoleSelect.innerHTML = `
+                <select id="teacher_select" style="margin-top: 30px">
+                    <option id="role" value="Custom lesson package">Looking for freelance work</option>
+                    <option id="role" value="Report mistake/bug">Provide Content</option>
+                    <option id="role" value="Payment problem">Other</option>
+                </select>
+`
+    }
+    else {
+        subRoleSelect.innerHTML = ``
+    }
+});
+
+// Form`s captcha script
+const numberOne = Math.round(Math.random() * 9)
+const numberTwo = Math.round(Math.random() * 9)
+let result = numberOne + numberTwo
+
+document.getElementById('num_one').textContent = numberOne 
+document.getElementById('num_two').textContent = numberTwo 

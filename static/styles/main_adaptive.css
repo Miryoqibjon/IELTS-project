@@ -1,0 +1,149 @@
+/* Responsive style code */
+@media (min-width:1280px) {
+    .teacher_photo img {
+        width: 130px;
+        height: 130px;
+        bottom: 0px;
+    }
+}
+
+@media (max-width:1255px) {
+    .certificate_img {
+        height: 420px;
+    }
+
+    .platinum_banner {
+        width: 450px;
+    }
+}
+
+@media (max-width:1200px) {
+    .course_name h3 {
+        font-size: 130%;
+    }
+}
+
+@media (max-width:1125px) {
+    .certificate_img {
+        height: 370px;
+    }
+
+    .platinum_banner {
+        width: 400px;
+    }
+}
+
+@media (max-width:1025px) {
+    .certificate_img {
+        height: 330px;
+        margin-left: 10px;
+    }
+
+    .platinum_banner {
+        width: 320px;
+        margin-left: 0px !important;
+    }
+
+    .course_name {
+        width: 100%;
+    }
+}
+
+@media (max-width:992px) {
+    nav>.container {
+        width: 100vw;
+        justify-content: space-between;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        margin: 0px !important;
+    }
+
+    nav {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        justify-content: space-between;
+        display: none;
+    }
+
+    .title h2 {
+        display: block;
+        font-size: 1.4em;
+    }
+
+    .title h2 span {
+        right: 125px;
+    }
+
+    .courses_card>a {
+        margin-top: 10px;
+    }
+
+    .header_for_mobile {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 20px;
+    }
+
+    .slider_content_certificate>.content {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .slider_content_certificate>.content img {
+        margin: 10px;
+    }
+
+    .header_for_mobile img {
+        margin-left: 15px;
+        width: 32px;
+    }
+    header {
+        display: none;
+    }
+    .tips .col-md-6 {
+        width: 47% !important;
+    }
+    .course_full_info .list_info {
+        font-size: 10px;
+    }
+    .course_full_info ul li button {
+        width: 50%;
+    }
+    .course_name h3 {
+        font-size: 16px;
+    }
+    .teacher_photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50% 0px 0px 0px;
+    }
+    .teacher_photo img {
+        width: 90px;
+        height: 90px;
+        right: 20px;
+    }
+    .teacher_info span {
+        font-size: 12px;
+    }
+    .courses_card .darkness {
+        max-height: 174px;
+    }
+    .course_full_info ul {
+        padding-top: 10px;
+    }
+    .courses .content {
+        max-height: 410px;
+    }
+    .courses .course_teacher {
+        font-size: 12px;
+    }
+    .why_using .title {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    
+}
+
+
