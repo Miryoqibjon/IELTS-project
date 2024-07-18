@@ -47,6 +47,7 @@ h3 {
     margin: 0;
     padding: 0;
     list-style: none;
+    max-height: 300px;
 }
 
 .u-input {
@@ -525,4 +526,8 @@ main.l-main .page-title {
 
 .sidebar-is-expanded main.l-main {
     padding-left: 220px;
+}
+
+#tooltip534675 {
+    top: 0px !important;
 }
